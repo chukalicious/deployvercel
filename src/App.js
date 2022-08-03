@@ -31,7 +31,19 @@ function App() {
         flexDirection: "column",
       }}
     >
-      <h2 style={{ marginBottom: "5rem", color: "white" }}>My Deployment</h2>
+      <h2
+        style={{
+          marginBottom: "5rem",
+          marginTop: "-.5rem",
+          color: "white",
+          paddingTop: "2rem",
+          paddingBottom: "2rem",
+          borderBottom: "5px solid white",
+          backgroundColor: "hotpink",
+        }}
+      >
+        My Deployment
+      </h2>
       <div
         style={{
           display: "flex",
@@ -55,7 +67,7 @@ function App() {
             fontWeight: "light",
             fontSize: "2rem",
             lineHeight: ".5rem",
-            color: "whitesmoke",
+            color: "blueviolet",
           }}
         >
           {message}
