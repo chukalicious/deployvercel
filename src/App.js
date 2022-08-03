@@ -24,17 +24,30 @@ function App() {
     setMessage("Back to earth");
   };
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <h2 style={{ marginBottom: "5rem", color: "white" }}>My Deployment</h2>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          margin: "0 auto",
+        }}
+      >
         <button style={buttonStyles} onClick={handleClick}>
           Deploy! 🚀
         </button>
-      </div>
 
-      <button style={buttonStyles} onClick={changeMessage}>
-        Land 🌎{" "}
-      </button>
+        <button style={buttonStyles} onClick={changeMessage}>
+          Land 🌎{" "}
+        </button>
+      </div>
 
       <div>
         <p
