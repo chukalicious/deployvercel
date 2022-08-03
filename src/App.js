@@ -5,6 +5,18 @@ function App() {
   const [message, setMessage] = useState("");
   console.log(message);
 
+  const buttonStyles = {
+    marginBottom: "1rem",
+    padding: "1rem",
+    fontSize: "1.5rem",
+    width: "40vw",
+    borderRadius: "10px",
+    backgroundColor: "hotpink",
+    color: "white",
+    fontWeight: "bold",
+    border: "5px solid white",
+  };
+
   const handleClick = () => {
     setMessage("Lift off!!");
   };
@@ -13,19 +25,28 @@ function App() {
   };
   return (
     <div className="App">
-      <h2>My Deployment</h2>
+      <h2 style={{ marginBottom: "5rem", color: "white" }}>My Deployment</h2>
       <div>
-        <button style={{ marginBottom: "1rem" }} onClick={handleClick}>
+        <button style={buttonStyles} onClick={handleClick}>
           Deploy! 🚀
         </button>
       </div>
 
-      <button style={{ marginBottom: "1rem" }} onClick={changeMessage}>
+      <button style={buttonStyles} onClick={changeMessage}>
         Land 🌎{" "}
       </button>
 
       <div>
-        <p>{message}</p>
+        <p
+          style={{
+            fontWeight: "light",
+            fontSize: "2rem",
+            lineHeight: ".5rem",
+            color: "whitesmoke",
+          }}
+        >
+          {message}
+        </p>
       </div>
     </div>
   );
